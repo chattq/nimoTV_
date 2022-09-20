@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- font-size -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- fontsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <!-- css -->
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="header-navbar">
+    <div class="header-navbar-main">
+      <div class="navbar-main-logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAABACAMAAAAXtNroAAAApVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+4/eNVAAAANnRSTlMAmu6xuIE/RfvlI97FCEzqVBxQN8oCE/j0DcChKI3Y0m8E4bWsaWK9p1zOLReUiHvwdUk8VzMa5A6zAAAGW0lEQVRo3uWb2XaqMBRAjzNaKdIyKqNFxHlqz/9/2r0l0UjILZIXF737qXYxbZOcIaXwOCM/dKZ9+H+4JAr+xdnA/0G8MpAyhv8B6zDEGw78fjYtG+8Ywm/ndYlFlvCrcRcB8uzgF6P7bWTMTz38JoLfitlPFGSMJyYQ5U/4VXif0b41m2VJMtWQoWRf8JeMhK9sNpvtDulAhcbj+QGK0PY65KyxgNNJY2gy+kxBEWGqAsVBnpcVyDGaBeNDDE8ltVHExwBu6ChgupVK9U4eH0x4HvEOBRx3XmFkUMT8C+ozxpwFPI8ZMhTbOba1YNl65eNTL5gPNa19dGwFGU59Z5Wen8HTOFxtO6nnwiPE+mX/ch3nbW1luopm8CwGSEg8qIOZarK9VRdzVvAkzIAMcQR10Q3JRx8NnzuvF5iTQn3cNZnaKtTE6nWzFTwNsiZ9kEFv02FuFBtSYrkgxSk/uwONgjQLB5BDPeaJqln1NomeHkjAeo13/pvYz7WZBRyroJ2Qen2btV8iIHwuwxaf56xduORaNj3qhJoyXCcpf13zZLwIGUcm/wTGdAEQst0d+eA3EdU2gSVIhuv8IQ3WeZ/y+4+KEX3Oz7z+GG8onQ03TwUIM/8b/uUEeQAyoIQp3uk8cYv+VbRvYGGOoQpqvM0tfoT5oaQsCVxguCFRs4Cy/cACSuv+8Dn+m37h6fMj54DfdPnss9Oc7gZ4PKO0EfSen9+DAv1rV2LCHWQXbXD7ntr3dVCXHWpeBc/XewyRJ7ybFgEKKQfWT/y3sjnN2wodikQ2l82qlLEFd0xFym/lQ3dImdAFYWMZzWMLFP+NMip1My2h8kC0s6fmgS5z6yhj72FlTCyyKBIsKnttvGJrCuvVLfa4rU7OkhxEPnRt3uELczyhciTavz3Tfq+WMi4eVsa2/3Z584kgU1aD61xe6ACmdyJLlz0z394OC4H16HKxpAtC5bNolLfa92Otaiorb1XKPJzyiQ7wwgSCeo3Qrz8rq1oxsm5tcv+yMksizojLjF0ybLWU0b4AZSmjbJFRd96B8amQKG+KlYvJ68UsfAxBrAzW7KiMv4Bn4SDOaipj25NWZk3Pm6jB7/+svLXvT43JoKdMmcdU6fSY+AuXXTTreHWVca5XTuz1Hu/x1zflrqiIjwNu4QmVoUW25+7juqZyymXc8fdFUhMYDyuv+zYNPG6V8gekDl5xUuhclV0yhy9QJCVztkJ5gzmbuy3pHlQq+0ifXkJ5DBOaU6ZqxcT+ANi2jkS4pQNT9sjYmCAq7xTzZ2XosqrzQgLLtlp5jJSOJ6EMERISs2qU/6Keo310VgHulAf0SjxkYeoVygPiaQFAQsuQamWDZRvfqq8M1zW6qxplRkF5IljKrMjcVChDeO2MdYWdUKnMaEdxbWXIkHCSUWZX4iGpa1ulnJLfxLCnmjWUCZ24tnK8RMJKRplatPn76lVruViOrFTyFZ3rK2NUU5l1gqi8GhLK6rVkElXEAVQp0/pjfaDHSyh36iuDPkeKhDL9aQoFVHLJfbWyZSMjlVH2JZRJKySrnNKnFaXO92plaOENTZVQbm9klKFvyyu7Gl0W5UbPgAeUPbzRg/rK4RdIKcNEkVRmRbbSU4FgXQeuX6HMyhFahtRW1hYmSCpDJK9srpEw7L1bptX3j0jI4CHlAdv6q6ls+y6AtDL40sqgD1HE2n1MGUIkbB5UTpCQjGRq7DsyaWX4ouMqbM+qlVO2xVOpzCKPcQGCvHI8RcJFpNwRKLMm2QsqX9jglcvlyBluOCzvCZ2nznoFPLzdSVQczQDKm9OOewujRq4jzLD74lR0uXd3nH0MAlxFGMgPfNnyQjpPWVbsT4/cNFa4tKnndzqxUZzclo6mA5T32RJgeInNhFv6T8vwBByWxt7QY4274oIke2FBGPfGnQtwWL7RpXdWD+POmR66yPyygu5ni7g4hJNWNxyuP3akvRTiZo7WgxJf3fWiXJ58giQBbVybxCstYiVgWz7QKFSHbgpLYdAevFmQma3p8itZGUGz0MkwhxLOUVPfSu/RGvoM9bBmmHO0oGmoBhKWLP5XMzq0kTCB5rGdI8UZJ61HmHXz5NTI2EXw5iiND83EmqIcdsPecrsjPhxRgmmj/wPS2mtYk/EAGo558ZdhGx9BmRtJuoVm8gdWp9DbyVMtvQAAAABJRU5ErkJggg==" alt="">
+      </div>
+      <ul class="nav-main nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <div class="nav-click active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</div>
+        </li>
+        <li class="nav-item" role="presentation">
+          <div class="nav-click" id="pills-live-tab" data-bs-toggle="pill" data-bs-target="#pills-live" type="button" role="tab" aria-controls="pills-live" aria-selected="false">Live</div>
+        </li>
+        <li class="nav-item" role="presentation">
+          <div class="nav-click nav-category" id="pills-category-tab" data-bs-toggle="pill" data-bs-target="#pills-category" type="button" role="tab" aria-controls="pills-category" aria-selected="false">
+            Category
+            <ion-icon class="category-icon" name="caret-down-outline"></ion-icon>
+          </div>
+        </li>
+        <li class="nav-item" role="presentation">
+          <div class="nav-click" id="pills-esport-tab" data-bs-toggle="pill" data-bs-target="#pills-esport" type="button" role="tab" aria-controls="pills-category" aria-selected="false">
+            Esport</div>
+        </li>
+      </ul>
+    </div>
+    <div class="header-navbar-minor">
+      <!-- search -->
+      <div class="navbar-search">
+
+      </div>
+      <!-- recharge -->
+      <div class="navbar-recharge">
+
+      </div>
+      <!-- golive -->
+      <div class="navbar-live">
+
+      </div>
+      <!-- down -->
+      <div class="navbar-down">
+
+      </div>
+      <!-- control -->
+      <div class="navbar-control">
+
+      </div>
+      <!-- sign -->
+      <div class="navbar-sign">
+
+    </div>
+    <!-- body -->
+    <div class="body tab-content" id="pills-tabContent">
+        <!-- home -->
+      <div class="home-container tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <img src="https://img.nimo.tv/o/banner/8A42F448BBF5A6CBBFE1BD94CFE58C4C_GTA5.jpg/l0/img.webp" alt="">
+      </div>
+      <!-- live -->
+      <div class="live-container tab-pane fade" id="pills-live" role="tabpanel" aria-labelledby="pills-live-tab" tabindex="0">
+        <div class="live-content">
+          <img src="https://img.nimo.tv/o/banner/FEAA665C88C2FAD8AD4FF84172149511_ARK.jpg/l0/img.webp" alt="">
+        </div>
+      </div>
+      
+        <!-- category -->
+        <div class="category-container tab-pane fade" id="pills-category" role="tabpanel" aria-labelledby="pills-category-tab" tabindex="0">
+          <div class="category-fix d-flex align-items-start">
+            <div class="category-menu nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <div class="category-control">
+                <div class="category-menu-header">
+                  <div class="menu-header-box">
+                    <div class="category-logo">
+                      <img src="https://www.nimo.tv/nms/images/sidebar-logo.2818872baaf842ab17d2e63fa190fe1f.png" alt="">
+                    </div>
+                    <h1>Join Nimo!</h1>
+                    <h2>Explore the world's best live streams!</h2>
+                    <div class="menu-btn">
+                      <span>Sign Up</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-menu">
+                  <div class="fame nav-link active" id="v-pills-fame-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fame" role="tab" aria-controls="v-pills-fame" aria-selected="false">
+                    <ion-icon class="nav-icon" name="aperture-outline"></ion-icon>
+                    All Game
+                  </div>
+                  <div class="rank nav-link" id="v-pills-top-tab" data-bs-toggle="pill" data-bs-target="#v-pills-top" role="tab" aria-controls="v-pills-top" aria-selected="false">
+                    <ion-icon class="nav-icon" name="podium-outline"></ion-icon>
+                    Leaderboard
+                  </div>
+                  <div class="mobile nav-link" id="v-pills-rank-tab" data-bs-toggle="pill" data-bs-target="#v-pills-rank"  role="tab" aria-controls="v-pills-rank" aria-selected="false">
+                    <ion-icon class="nav-icon" name="medal-outline"></ion-icon>
+                    Hall of fame
+                  </div>
+                  <div class="mobile-game nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    <ion-icon class="nav-icon" name="phone-portrait-outline"></ion-icon>
+                    Mobile game
+                  </div>
+                </div>
+                <div class="box-game">
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Play Together
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Ragnarok X: Next Generation
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    AOV
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    League of Legneds: Wild Rift
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    PUBG Mobile
+                  </div>
+                  <div class="game-child-more nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    More
+                    <ion-icon class="more-icon" name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="desktop nav-link" id="v-pills-desktop-tab" data-bs-toggle="pill" data-bs-target="#v-pills-desktop" role="tab" aria-controls="v-pills-desktop" aria-selected="false">
+                  <ion-icon class="nav-icon" name="desktop-outline"></ion-icon>
+                  PC game
+                </div>
+                <div class="box-game">
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Business Tour
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Lost Ark
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-ark-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ark"  role="tab" aria-controls="v-pills-ark" aria-selected="false">
+                    ARK: Survival Evolved
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-gt5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gt5"  role="tab" aria-controls="v-pills-gt5" aria-selected="false">
+                    GTA5
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    League of Legends
+                  </div>
+                  <div class="game-child-more nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    More
+                    <ion-icon class="more-icon" name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="others nav-link" id="v-pills-others-tab" data-bs-toggle="pill" data-bs-target="#v-pills-others" role="tab" aria-controls="v-pills-others" aria-selected="false">
+                  <ion-icon class="nav-icon" name="mic-outline"></ion-icon>
+                  Others
+                </div>
+                <div class="box-game">
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Liveshow
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Voice Room
+                  </div>
+                  <div class="game-child nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    Outdoor
+                  </div>
+                  <div class="game-child-more nav-link" id="v-pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-mobile"  role="tab" aria-controls="v-pills-mobile" aria-selected="false">
+                    More
+                    <ion-icon class="more-icon" name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="category-footer">
+                <div class="category-down-app">
+                  <div class="category-down-app__box">
+                    <div class="down">
+                      <i class="fa-solid fa-download"></i>
+                      Download App
+                    </div>
+                    <div class="down-img">
+                      <div class="down-img-box"></div>
+                      <img src="https://www.nimo.tv/nms/images/qrcodeNimotv_new.b65f3ae8294194d7cb5f74d26373b7c8.png" alt="">
+                    </div>
+                    <h5>Top live streaming platform</h5>
+                  </div>
+                  <div class="category-go-live">
+                    <span>
+                      <ion-icon class="icon-live" name="tv-outline"></ion-icon>
+                      Go Live
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category-content">
+            <div class="category-content__box ">
+              <div class="tab-content" id="v-pills-tabContent">
+                <!-- all-game -->
+                <div class="content-game tab-pane fade show active" id="v-pills-fame" role="tabpanel" aria-labelledby="v-pills-fame-tab" tabindex="0">
+                  <div class="allgame-header">
+                    <h1>All Game</h1>
+                    <ul class="allgame-tab nav nav-tabs" id="myTab" role="tablist">
+                      <li class="allgame-item nav-item" role="presentation">
+                        <div class="allgame-child nav-link active" id="allgame-tab" data-bs-toggle="tab" data-bs-target="#allgame-tab-pane" role="tab" aria-controls="allgame-tab-pane" aria-selected="true">All</div>
+                      </li>
+                      <li class="allgame-item nav-item" role="presentation">
+                        <div class="allgame-child nav-link" id="mobilegame-tab" data-bs-toggle="tab" data-bs-target="#mobilegame-tab-pane" role="tab" aria-controls="mobilegame-tab-pane" aria-selected="false">Mobile game</div>
+                      </li>
+                      <li class="allgame-item nav-item" role="presentation">
+                        <div class="allgame-child nav-link" id="pcgame-tab" data-bs-toggle="tab" data-bs-target="#pcgame-tab-pane" role="tab" aria-controls="pcgame-tab-pane" aria-selected="false">PC game</div>
+                      </li>
+                      <li class="allgame-item nav-item" role="presentation">
+                        <div class="allgame-child nav-link" id="others-tab" data-bs-toggle="tab" data-bs-target="#others-tab-pane" role="tab" aria-controls="others-tab-pane" aria-selected="false">Others</div>
+                      </li>
+                    </ul>
+                    <!-- AOV <img src="https://img.nimo.tv/o/banner/17B38FF85FF85AE81CC0109E77A34F71_d19c79eae883586bb14b22c441e966cc.png/l0/img.webp" alt=""> -->
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="allgame-tab-pane" role="tabpanel" aria-labelledby="allgame-tab" tabindex="0">
+                        <div class="card-container row">
+                          <div class="card-box-img">
+                            <div class="card" style="width: 12rem; height: 20rem; border: none;">
+                              <img src="https://img.nimo.tv/o/banner/9BFDF699E480D6A4A3B8B4572FA90F69_06b6a603b0a97d3baa7dbdd9c86c8aaa.jpg/w500_l0/img.webp" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">Liveshow</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- mobile game -->
+                      <div class="tab-pane fade" id="mobilegame-tab-pane" role="tabpanel" aria-labelledby="mobilegame-tab" tabindex="0">
+                        <div class="card-container row">
+                          <div class="card-box-img">
+                            <div class="card" style="width: 12rem; height: 20rem; border: none;">
+                              <img src="https://img.nimo.tv/o/banner/D09CD8411936B13CF08C2539D3B40317_58f2f37a2344aed8e100b3f240a5bb04.png/w500_l0/img.webp" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">Liveshow</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- pcgame -->
+                      <div class="tab-pane fade" id="pcgame-tab-pane" role="tabpanel" aria-labelledby="pcgame-tab" tabindex="0">
+                        <div class="card-container row">
+                          <div class="card-box-img">
+                            <div class="card" style="width: 12rem; height: 20rem; border: none;">
+                              <img src="https://img.nimo.tv/o/game/A869BE86987B8396FF4A71023CAE4BD5_poster.jpg/w500_l0/img.webp" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">ARK: Survival Evolved</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- others -->
+                      <div class="tab-pane fade" id="others-tab-pane" role="tabpanel" aria-labelledby="others-tab" tabindex="0"><div class="card-container row">
+                        <div class="card-box-img">
+                          <div class="card" style="width: 12rem; height: 20rem; border: none;">
+                            <img src="https://img.nimo.tv/o/banner/BF155E297933B2B69E892F5953A94DE3_huwai.png/w500_l0/img.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <p class="card-text">Outdoor</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- leader -->
+                <div class="tab-pane fade" id="v-pills-top" role="tabpanel" aria-labelledby="v-pills-top-tab" tabindex="0">
+                  <img src="https://img.nimo.tv/o/banner/D126C9C813178A85B313B491F29E6632_7f2de02df66074f3dbe5978b66a82158.png/w500_l0/img.webp" alt="">
+                </div>
+                <!-- hall -->
+                <div class="tab-pane fade" id="v-pills-rank" role="tabpanel" aria-labelledby="v-pills-rank-tab" tabindex="0">
+                  <img src="https://img.nimo.tv/o/banner/61DC05D165132FC9B7394AB8E8E1C6AC_9dbe8d5540d0886d06ba44bc4d0e992c.jpg/w500_l0/img.webp" alt="">
+                </div>
+                <!-- mobile-game -->
+                <div class="tab-pane fade" id="v-pills-mobile" role="tabpanel" aria-labelledby="v-pills-mobile-tab" tabindex="0">
+                  <img src="https://img.nimo.tv/o/banner/DD32D5B48663891CE87978F262E2FA41_LOL.jpg/w500_l0/img.webp" alt="">
+                </div>
+                <div class="ark-tab tab-pane fade" id="v-pills-ark" role="tabpanel" aria-labelledby="v-pills-ark-tab" tabindex="0">
+                  <div class="ark card-inside">
+                    <img src="https://img.nimo.tv/o/banner/FEAA665C88C2FAD8AD4FF84172149511_ARK.jpg/l0/img.webp" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h1 class="card-title">ARK: Survival Evolved</h1>
+                      <p class="card-text-1">
+                        <i class="fa-brands fa-youtube"></i>
+                        0 Live
+                      </p>
+                      <p class="card-text-2">
+                        Esports Events
+                        <i class="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="footer-card">
+                    <div class="footer-card-tittle">
+                      <h4>ARK: Survival Evolved Live now</h4>
+                    </div>
+                    <div class="footer-card-region">
+                      <div class="choosee">Choose country/region: </div>
+                      <div class="choose-dropdown">
+                        <div class="dropdown">
+                          <span class="footer"  data-bs-toggle="dropdown" aria-expanded="false">
+                            Vietnam
+                            <i class="footer-icon fa-solid fa-angle-down"></i>
+                          </span>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Gobal</a></li>
+                            <li><a class="dropdown-item" href="#">China</a></li>
+                            <li><a class="dropdown-item" href="#">Turkey</a></li>
+                            <li><a class="dropdown-item" href="#">Morocco</a></li>
+                            <li><a class="dropdown-item" href="#">Iraq</a></li>
+                            <li><a class="dropdown-item" href="#">Vietnam</a></li>
+                            <li><a class="dropdown-item" href="#">Korea</a></li>
+                            <li><a class="dropdown-item" href="#">Egypt</a></li>
+                            <li><a class="dropdown-item" href="#">More</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-img-box">
+                      <div class="footer-img">
+                        <img src="https://www.nimo.tv/nms/images/no-info2-dark.1852ffa5dc09a3e98af0edc2a3231bd1.png" alt="">
+                      </div>
+                      <p class="footer-text">There is no live currently</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="gt5-tab tab-pane fade" id="v-pills-gt5" role="tabpanel" aria-labelledby="v-pills-gt5-tab" tabindex="0">
+                  <div class="gt5-card">
+                    <img src="https://img.nimo.tv/o/banner/8A42F448BBF5A6CBBFE1BD94CFE58C4C_GTA5.jpg/l0/img.webp" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h1 class="card-title">GTA5</h1>
+                      <p class="paraghap">GTA5 is an open world, action-adventure game centered on a heist mission. The game is played from either a third-person or first-person perspective and its world is navigated on foot or by vehicle. Players control the three lead protagonists throughout single-player and switch between them both during and outside missions.</p>
+                      <p class="card-text-1">
+                        <i class="fa-brands fa-youtube"></i>
+                        54 Live
+                      </p>
+                      <p class="card-text-2">
+                        Esports Events
+                        <i class="fa-solid fa-angle-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="footer-card">
+                    <div class="footer-card-tittle">
+                      <h4>ARK: Survival Evolved Live now</h4>
+                    </div>
+                    <div class="footer-card-region">
+                      <div class="choosee">Choose country/region: </div>
+                      <div class="choose-dropdown">
+                        <div class="dropdown">
+                          <span class="footer"  data-bs-toggle="dropdown" aria-expanded="false">
+                            Vietnam
+                            <i class="footer-icon fa-solid fa-angle-down"></i>
+                          </span>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Gobal</a></li>
+                            <li><a class="dropdown-item" href="#">China</a></li>
+                            <li><a class="dropdown-item" href="#">Turkey</a></li>
+                            <li><a class="dropdown-item" href="#">Morocco</a></li>
+                            <li><a class="dropdown-item" href="#">Iraq</a></li>
+                            <li><a class="dropdown-item" href="#">Vietnam</a></li>
+                            <li><a class="dropdown-item" href="#">Korea</a></li>
+                            <li><a class="dropdown-item" href="#">Egypt</a></li>
+                            <li><a class="dropdown-item" href="#">More</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer-img-box">
+                      <div class="footer-img">
+                        <img src="https://www.nimo.tv/nms/images/no-info2-dark.1852ffa5dc09a3e98af0edc2a3231bd1.png" alt="">
+                      </div>
+                      <p class="footer-text">There is no live currently</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- pc-game -->
+                <div class="tab-pane fade" id="v-pills-desktop" role="tabpanel" aria-labelledby="v-pills-desktop-tab" tabindex="0">
+                  desktop
+                </div>
+                <!-- others -->
+                <div class="tab-pane fade" id="v-pills-others" role="tabpanel" aria-labelledby="v-pills-others-tab" tabindex="0">
+                  others
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- esport -->
+        <div class="esport-container tab-pane fade" id="pills-esport" role="tabpanel" aria-labelledby="pills-esport-tab" tabindex="0">
+          <img src="https://img.nimo.tv/o/banner/8D7498EA34C958074657E3CB875686EB_f6a1829ceb298d1ee8819945fefce95a.jpg/l0/img.webp" alt="">      
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- icon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>
